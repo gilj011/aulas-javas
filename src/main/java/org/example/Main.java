@@ -5,6 +5,6 @@ public class Main {
         Integer idade = 18;
         String nome = "Gilberto";
 
-        System.out.printf("Olá " + nome + " Você tem:\n"+ idade + " anos");
+        System.out.print("Olá " + nome + " Você tem:\n"+ idade + " anos");
     }
 }

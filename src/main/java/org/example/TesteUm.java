@@ -19,8 +19,20 @@ public class TesteUm{
             System.out.println("nao é engual");
         }
         Boolean isIgual = n1 == n2;
-                while (isIgual){
+        if (!isIgual) {
 
-                }
+        }
+
+        Integer numeroOpcao=2;
+        switch (numeroOpcao){
+            case 1:
+                System.out.println("Foi 1");break;
+            case 2:
+                System.out.printf("Foi 2");break;
+            case 3:
+                System.out.println("foi 3");break;
+            default:
+                System.out.println("Não está entre 1 e 3 ");
+        }
     }
 }
