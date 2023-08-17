@@ -11,11 +11,17 @@ public class Loteria {
         Integer contador = 0;
         System.out.println("Escolha um numero entre 1 e 10");
         numeroEscolhido = leitor.nextInt();
+        while (numeroEscolhido > 10){
+            System.out.println("Escolha um numero entre 1 e 10");
+            numeroEscolhido = leitor.nextInt();
+        }
 
 
         do {
-            random = ThreadLocalRandom.current().nextInt(0,11);
             contador++;
+            random = ThreadLocalRandom.current().nextInt(0,11);
+            System.out.printf("%dº numero q veio %d\n",contador,random);
+
         }while (numeroEscolhido != random);
 
         if (contador <= 3 ) {
@@ -23,7 +29,7 @@ public class Loteria {
 
 
         } else if (contador > 3 && contador <= 10) {
-            System.out.printf("Você é sortudo, conseguiu com: \n %d tentativas", contador);
+            System.out.printf("Você é sortudo, conseguiu com: \n%d tentativas", contador);
         }else {
             System.out.printf("É melhor você parar de apostar e ir trabalhar conseguiu com: \n %d tentativas", contador);
         }
