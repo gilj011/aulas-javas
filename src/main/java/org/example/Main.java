@@ -1,6 +1,10 @@
 package org.example;
+
+import java.util.Timer;
+import java.util.concurrent.DelayQueue;
+
 public class Main {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Carro carro1 = new Carro();
         Carro carro2 = new Carro();
 
@@ -21,4 +25,16 @@ public class Main {
 
 
     }
+    */
+    public static void main(String[] args) {
+        Calculadora calculadora = new Calculadora();
+        calculadora.somar(1, 1);
+
+        Integer resultadoSub = calculadora.subtrair(10,5);
+        System.out.println(resultadoSub);
+        System.out.println("fim");
+
+    }
+
+
 }
