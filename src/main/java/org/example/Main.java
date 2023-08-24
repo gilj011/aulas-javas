@@ -1,10 +1,24 @@
 package org.example;
-
 public class Main {
     public static void main(String[] args) {
-        Integer idade = 18;
-        String nome = "Gilberto";
+        Carro carro1 = new Carro();
+        Carro carro2 = new Carro();
 
-        System.out.print("Olá " + nome + " Você tem:\n"+ idade + " anos");
+        carro1.marca = "Fiat";
+        carro1.modelo = "Uno";
+        carro1.anoLancamento = 1995;
+
+        carro2.marca = "Porsche";
+        carro2.modelo = "Cayene";
+        carro2.anoLancamento = 2018;
+
+
+        System.out.print("""
+                Modelo Carro 1 =%s %s
+                Modelo Carro 2 =%s %s
+                
+                """.formatted(carro1.marca,carro1.modelo,carro2.marca,carro2.modelo));
+
+
     }
 }

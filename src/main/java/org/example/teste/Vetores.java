@@ -1,4 +1,4 @@
-package org.example;
+package org.example.teste;
 
 public class Vetores {
     public static void main(String[] args) {
