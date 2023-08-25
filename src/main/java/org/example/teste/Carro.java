@@ -1,4 +1,4 @@
-package org.example;
+package org.example.teste;
 
 public class Carro {
     String modelo;
