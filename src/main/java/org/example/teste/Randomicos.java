@@ -1,4 +1,4 @@
-package org.example;
+package org.example.teste;
 
 import java.util.concurrent.ThreadLocalRandom;
 
