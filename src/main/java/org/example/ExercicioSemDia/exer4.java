@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ExercicioSemDia;
 
 
 import javax.swing.text.StyledEditorKit;

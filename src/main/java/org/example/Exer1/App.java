@@ -13,10 +13,13 @@ public class App {
         bolo1.sabor = scanner.nextLine();
         System.out.println("E qual preço? (entre 30.00R$ e 50.00R$)");
         bolo1.valor = scanner.nextDouble();
-        do {
-            System.out.println("Digite um valor entre 30.00R$ e 50.00R$");
-            bolo1.valor = scanner.nextDouble();
-        }while (bolo1.valor < 30 || bolo1.valor > 50);
+
+if (bolo1.valor < 30 || bolo1.valor > 50) {
+    do {
+        System.out.println("Digite um valor entre 30.00R$ e 50.00R$");
+        bolo1.valor = scanner.nextDouble();
+    } while (bolo1.valor < 30 || bolo1.valor > 50);
+}
 
 
         System.out.println("Qual o sabor do segundo bolo?");

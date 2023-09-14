@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ExercicioSemDia;
 
 import java.util.Scanner;
 
